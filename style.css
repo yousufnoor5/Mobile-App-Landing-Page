@@ -1,0 +1,433 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    /* transition: all 0.5s ease-in-out; */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /* background-image: linear-gradient(to left,#4DD0E1,  #00E676);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+/* HEADER starts from here */
+
+.mobileHeader{
+    display: none;
+    background-image: linear-gradient(to left,#4DD0E1,  #00E676);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 21;
+    overflow: hidden;
+    animation-name: navbar;
+    animation-duration: .5s;
+}
+
+.mobileHeader p{
+    float: right;
+    cursor: pointer;
+    margin: 10px;
+}
+.mobileHeader ul{
+    position: relative;
+    overflow: hidden;
+}
+
+.mobileHeader ul li{
+    margin: 10px;
+    color: white;
+    list-style: none;
+    padding:18px;
+    width: 200px;
+    animation-name: navbarli;
+    animation-duration: .8s;
+}
+
+.mobileHeader ul li a:hover{
+    color:red;
+}
+
+@keyframes navclose {
+    from {width: 200px;}
+    to {width: 0;}
+  }
+  @keyframes navbar {
+    from {width: 0;}
+    to {width: 200px;}
+  }
+  @keyframes navbarli {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* padding:10px; */
+    height: 55px;
+    z-index: 20;
+    background-image: linear-gradient(to left,#4DD0E1,  #00E676);
+}
+header p{
+    display: none;
+    cursor: pointer;
+}
+
+header h5{
+    font-size: 22px;
+    float: left;
+    color: white;
+    margin: 8px;
+}
+
+.desktopmenu{
+    float: right;
+    
+}
+
+.desktopmenu ul li{
+    list-style: none;
+    padding:22px;
+    display: inline;
+   
+}
+.desktopmenu ul li a:hover{
+    color: red;
+   
+}
+.firstcontent{
+    background-image: linear-gradient(to left,#4DD0E1,  #00E676);
+    display: flex;
+    justify-content: space-around;
+   margin-top: 55px;
+    align-items: center;
+    height: 40%;
+    flex-wrap: wrap;
+    z-index: 10;
+    border-bottom-right-radius:900px;
+}
+.text h2{
+    font-size: 40px;
+}
+.text{
+    font-size: 22px;
+    color: white;
+    width: 70%;
+}
+#img1{
+    margin: 20px;
+    width: 250px;
+    height: 500px;
+}
+/* #img2{
+    margin: 20px;
+    transform: rotate(-30deg);
+    width: 280px;
+    height: 500px;
+} */
+
+/* Second content starts from here */
+
+.secondcontent{
+    /* margin: 10px; */
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* border-top-left-radius:50px;
+    border-top-right-radius: 50px; */
+    /* border-bottom-left-radius:50px;
+    border-bottom-right-radius: 50px; */
+}
+
+.heading h3{
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+}
+.heading p{
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
+.card{
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+    background-image: linear-gradient(to bottom,#4DD0E1,  #00E676);
+    border-radius: 50% ;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-image: linear-gradient(to top,#4DD0E1,  #00E676);
+}
+#icon{
+    font-size: 50px;
+}
+#desc{
+    font-size: 15px;
+    margin-top: -30px;
+}
+
+/* Third content starts from here */
+
+.thirdcontent{
+
+    background-image: linear-gradient(to left,#4DD0E1,  #00E676);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 10;
+    
+}
+
+.thirdcontenttext{
+    width: 600px;
+}
+
+.thirdcontentimage{
+    width: 400px; 
+}
+
+.thirdcontenttext p{
+    /* width: 600px; */
+    margin: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.thirdcontentimage img{
+    margin: 15px;
+    width: 90%;
+    height: 75%;
+    /* width: 380px;
+    height: 230px; */
+    border-radius: 10px;
+}
+
+/* fourth content starts from here */
+
+.fourthcontent{
+    background-color: white;
+    padding: 10px;
+   
+}
+
+.fourthcontent h2{
+    text-align: center;
+}
+
+.boxforfourthcontent{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+
+}
+.fourthcontentcard{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2);
+    margin: 10px;
+    text-align: center;
+    padding: 15px;
+    width: 350px;
+}
+
+.fourthcontentcard img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+/* Fifth content starts from here */
+
+.fifthcontent{
+    display: flex;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background-image: linear-gradient(to left,#4DD0E1,  #00E676);
+    padding: 30px;
+    
+}
+
+.fifthcontenttext p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.fifthcontentinput input{
+    padding: 8px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 600px;
+
+}
+
+.fifthcontentinput button{
+    padding: 8px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+
+}
+
+/*FOOTER starts from here */
+
+footer{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 25px;
+    color: white;
+    
+}
+.aboutus{
+    margin-top: 40px;
+}
+
+.aboutus ul li{
+    margin: 10px;
+    width: 350px;
+    list-style: none;
+}
+.links ul li{
+    margin: 10px;
+    list-style: none;
+   
+    
+}
+.contactinfo ul li{
+    margin: 10px;
+    list-style: none;
+
+}
+.links a{
+    color: lightblue;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+@media only screen and (max-width:1023px)
+{
+ 
+    header p{
+        float: left;
+        margin: 10px;
+        color: white;
+        font-size: 18px;
+        display: block;
+    }
+    header h5{
+        font-size: 20px;
+    }
+
+    .text h2{
+        font-size: 30px;
+    }
+
+    .text{
+        font-size: 19px;
+        color: white;
+        width: 70%;
+    }
+
+    .fifthcontentinput input{
+        padding: 8px 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        width: 200px;
+    
+    }
+    
+    .fifthcontentinput button{
+        padding: 8px 20px;
+        margin: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: red;
+        color: white;
+    
+    }
+    footer{
+        padding: 5px;
+        display: block;
+        text-align: left;
+        /* width: 100%; */
+    }
+    .aboutus{
+        width: 2rem;
+        margin-bottom: 40px;
+       
+    }
+    .aboutus ul li{
+        margin: 10px;
+        width: 250px;
+        list-style: none;
+    }
+    .contactinfo{
+        margin-top: 40px;
+
+    }
+
+    .desktopmenu{
+        display: none;
+    }
+
+}
+
+
+
+/* FOR ANIMATION : */
+
+.firstcontent-1, .firstcontent-2,.secondcontent-1,.secondcontent-card1,.secondcontent-card2,.secondcontent-card3
+,.secondcontent-card4,.secondcontent-card5,.thirdcontent-1,.thirdcontent-2,.fourthcontent-1,.fifthcontent-1
+
+{
+    opacity: 0;
+
+}
+.firstcontent-1.animate__animated, .firstcontent-2.animate__animated,.secondcontent-1.animate__animated,.secondcontent-card1.animate__animated
+,.secondcontent-card2.animate__animated,.secondcontent-card3.animate__animated,.secondcontent-card4.animate__animated
+,.secondcontent-card5.animate__animated,.thirdcontent-1.animate__animated,.thirdcontent-2.animate__animated,
+.fourthcontent-1.animate__animated,.fifthcontent-1.animate__animated
+
+{
+    opacity: 1;
+
+}
